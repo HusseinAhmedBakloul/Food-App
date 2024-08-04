@@ -1,0 +1,233 @@
+name: food
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.4 <4.0.0'
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+  font_awesome_flutter: ^10.7.0
+  http: ^1.2.1
+  dropdown_button2: ^2.3.9
+  shared_preferences: ^2.2.3
+  firebase_core: ^3.2.0
+  cloud_firestore: ^5.1.0
+  firebase_storage: ^12.1.1
+  firebase_messaging: ^15.0.3
+  firebase_auth: ^5.1.2
+  google_sign_in: ^6.2.1
+  icons_plus: ^5.0.0
+  flex_color_scheme: ^7.3.1
+  flutter_rating_bar: ^4.0.1
+  cupertino_icons: ^1.0.2
+  provider: ^6.1.2
+  image_picker: ^1.1.2
+  uuid: ^4.4.2
+  flutter_credit_card: ^4.0.1
+  animated_splash_screen: ^1.3.0
+  lottie: ^3.1.2
+  
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: "^0.13.1"
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "images/Screenshot 2024-07-24 144548.png"
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^3.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - images/Screenshot_2024-07-23_064257-removebg-preview.png
+    - Lottie/Animation - 1721677009678.json
+    - images/image_1024.jpeg
+    - images/pngtree-burger-png-images-png-image_13164941.png
+    - images/4bda0223-ffa9-4d99-bf1c-fb8f08203641.jpg
+    - images/Screenshot 2024-02-24 231954.png
+    - images/Screenshot 2024-02-25 000746.png
+    - images/download (1).jpeg
+    - images/4bda0223-ffa9-4d99-bf1c-fb8f08203641.jpg
+    - images/Screenshot 2024-02-25 223300.png
+    - images/istockphoto-146058150-612x612.jpg
+    - images/istockphoto-1656475347-612x612.jpg
+    - images/istockphoto-1776252085-612x612.jpg
+    - images/istockphoto-178482759-612x612.jpg
+    - images/pngtree-avatar-vector-icon-white-background-png-image_1870181.jpg
+    - images/image.png
+    - images/Screenshot 2024-06-13 144644.png
+    - images/Screenshot 2024-06-13 145027.png
+    - images/Screenshot 2024-06-13 202919.png
+    - images/Screenshot 2024-06-13 203129.png
+    - images/Screenshot 2024-06-13 203749.png
+    - images/Screenshot 2024-07-16 023454.png
+    - images/Screenshot 2024-07-16 023744.png
+    - images/Screenshot 2024-07-16 024334.png
+    - images/Screenshot 2024-07-16 024757.png
+    - images/Screenshot 2024-07-16 025028.png
+    - images/Screenshot 2024-07-16 025802.png
+    - images/Screenshot_2024-07-16_025028-removebg-preview.png
+    - images/Screenshot 2024-07-16 040406.png
+    - images/Screenshot 2024-07-16 040940.png
+    - images/Screenshot 2024-07-16 041217.png
+    - images/Screenshot 2024-07-16 041630.png
+    - images/download__1_-removebg-preview.png
+    - images/Screenshot 2024-07-16 061803.png
+    - images/pngtree-burger-png-images-png-image_13164941-removebg-preview.png
+    - images/Screenshot 2024-07-16 065640.png
+    - images/Screenshot 2024-07-16 065959.png
+    - images/Screenshot 2024-07-16 070243.png
+    - images/Screenshot 2024-07-16 070437.png
+    - images/Screenshot 2024-07-16 073852.png
+    - images/Screenshot 2024-07-16 074034.png
+    - images/Screenshot 2024-07-16 074143.png
+    - images/Screenshot 2024-07-16 074235.png
+    - images/Screenshot 2024-07-16 074343.png
+    - images/Screenshot_2024-07-16_080409-removebg-preview.png
+    - images/4bda0223-ffa9-4d99-bf1c-fb8f08203641-removebg-preview.png
+    - images/Screenshot 2024-07-16 082408.png
+    - images/Screenshot 2024-07-16 082709.png
+    - images/Screenshot 2024-07-16 082846.png
+    - images/istockphoto-146058150-612x612.jpg
+    - images/istockphoto-146058150-612x612-removebg-preview.png
+    - images/Screenshot 2024-07-16 114052.png
+    - images/Screenshot 2024-07-16 114238.png
+    - images/Screenshot 2024-07-16 114501.png
+    - images/istockphoto-1656475347-612x612-removebg-preview.png
+    - images/istockphoto-1776252085-612x612_-_Copy-removebg-preview.png
+    - images/Screenshot_2024-02-25_223300-removebg-preview.png
+    - images/Screenshot 2024-07-16 130217.png
+    - images/istockphoto-178482759-612x612-removebg-preview.png
+    - images/image_1024-removebg-preview.png
+    - images/Screenshot_2024-07-16_073852-removebg-preview.png
+    - images/Screenshot_2024-07-16_074034-removebg-preview.png
+    - images/Screenshot_2024-07-16_074143-removebg-preview.png
+    - images/Screenshot_2024-07-16_074235-removebg-preview.png
+    - images/Screenshot_2024-07-16_074343-removebg-preview.png
+    - images/Screenshot_2024-07-17_052616-removebg-preview.png
+    - images/Screenshot_2024-07-17_052646-removebg-preview.png
+    - images/Screenshot_2024-07-17_054301-removebg-preview.png
+    - images/Screenshot_2024-07-17_054422-removebg-preview.png
+    - images/Screenshot_2024-07-17_054455-removebg-preview.png
+    - images/Screenshot_2024-07-17_052857-removebg-preview.png
+    - images/Screenshot_2024-07-17_065539-removebg-preview (1).png
+    - images/Screenshot 2024-07-17 070432.png
+    - images/Screenshot 2024-07-17 070551.png
+    - images/Screenshot 2024-07-17 071002.png
+    - images/Screenshot 2024-07-17 071254.png
+    - images/Screenshot 2024-07-17 071545.png
+    - images/Screenshot 2024-07-17 072214.png
+    - images/Screenshot 2024-07-17 072313.png
+    - images/Screenshot 2024-07-17 080409.png
+    - images/Screenshot 2024-07-17 082519.png
+    - images/Screenshot 2024-07-17 082202.png
+    - images/Screenshot 2024-07-17 082312.png
+    - images/Screenshot 2024-07-17 082719.png
+    - images/Screenshot 2024-07-17 083028.png
+    - images/Screenshot 2024-07-18 204706.png
+    - images/Screenshot 2024-07-18 204737.png
+    - images/Screenshot 2024-07-18 204836.png
+    - images/Screenshot 2024-07-18 204917.png
+    - images/Screenshot 2024-07-18 205102.png
+    - images/Screenshot_2024-07-18_205623-removebg-preview.png
+    - images/Screenshot_2024-07-18_205214-removebg-preview.png
+    - images/Screenshot_2024-07-18_205525-removebg-preview.png
+    - images/Screenshot_2024-07-18_205709-removebg-preview.png
+    - images/Screenshot_2024-07-18_205933-removebg-preview.png
+    - images/Screenshot_2024-07-18_210915-removebg-preview.png
+    - images/Screenshot_2024-07-18_210136-removebg-preview.png
+    - images/Screenshot 2024-07-19 063238.png
+    - images/Screenshot 2024-07-19 063635.png
+    - images/Screenshot 2024-07-19 062715.png
+    - images/Screenshot 2024-07-19 062653.png
+    - images/Screenshot 2024-07-19 064254.png
+    - images/Screenshot_2024-07-19_064502-removebg-preview.png
+    - images/Screenshot_2024-07-19_064752-removebg-preview.png
+    - images/Screenshot_2024-07-19_065002-removebg-preview.png
+    - images/Screenshot_2024-07-19_065634-removebg-preview.png
+    - images/Screenshot_2024-07-19_065947-removebg-preview (1).png
+    - images/Screenshot_2024-07-19_070430-removebg-preview.png
+    - images/Screenshot_2024-07-19_070610-removebg-preview.png
+    - images/Screenshot_2024-07-19_071536-removebg-preview.png
+    - images/Screenshot 2024-07-19 071900.png
+    - images/Screenshot_2024-07-19_072003-removebg-preview.png
+    - images/Screenshot_2024-07-19_072154-removebg-preview.png
+    - images/Screenshot 2024-07-19 072356.png
+    - images/Screenshot 2024-07-19 072606.png
+    - images/Screenshot_2024-07-19_072746-removebg-preview.png
+    - images/Screenshot_2024-07-19_072931-removebg-preview.png
+    - images/Screenshot_2024-07-19_073203-removebg-preview.png
+    - images/Screenshot_2024-07-19_073410-removebg-preview.png
+    - images/Screenshot_2024-07-19_073829-removebg-preview.png
+    - images/Screenshot_2024-07-19_074115-removebg-preview.png
+    - images/Screenshot_2024-07-19_074926-removebg-preview.png
+    - images/Screenshot_2024-07-19_081552-removebg-preview.png
+    - images/Screenshot_2024-07-19_075406-removebg-preview.png
+    - images/Screenshot 2024-07-19 075627.png
+    - images/Screenshot 2024-07-19 075744.png
+    - images/Screenshot 2024-07-19 075909.png
+    - images/Screenshot 2024-07-19 080032.png
+    - images/Screenshot_2024-07-19_080237-removebg-preview.png
+    - images/Screenshot 2024-07-19 080533.png
+    - images/Screenshot 2024-07-19 080659.png
+    - images/Screenshot_2024-07-19_080936-removebg-preview.png
+    - images/Screenshot_2024-07-19_081141-removebg-preview.png
+    - images/Screenshot_2024-07-22_114531-removebg-preview.png
+  
+  fonts:
+    - family: NotoNastaliqUrdu
+      fonts:
+        - asset: fonts\static\NotoNastaliqUrdu-Bold.ttf
+    
+    - family: Oswald
+      fonts:
+        - asset: fonts\Oswald\static\Oswald-Bold.ttf
+    
+    - family: Oswald
+      fonts:
+        - asset: fonts\static\Oswald-Bold.ttf
